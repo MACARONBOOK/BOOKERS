@@ -1,8 +1,9 @@
 class CreateLists < ActiveRecord::Migration[6.1]
   def change
     create_table :lists do |t|
-
-      t.timestamps
+      #以下の2行を追加
+      t.string :title
+      t.string :body
     end
   end
 end
